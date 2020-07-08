@@ -1,1 +1,6 @@
-{"prefix":"!","Administrateur_Id":"","banwords":["insulte","injure"],"AdminChannel":"","AccueilChannel":"","TicketSpacer":""}
+{
+	"prefix": "!",
+	"token": "",
+	"Administrateur_Id": "",
+	"TicketSpacer": ""
+}
