@@ -5,6 +5,7 @@ module.exports = {
         const {
             prefix,
             token,
+            token_blague,
             Administrateur_Id,
             TicketSpacer
         } = require('../config.json');

@@ -4,10 +4,17 @@ module.exports = {
     name: 'blague',
     description: 'Send joke!',
     execute(message) {
+        const {
+            prefix,
+            token,
+            token_blague,
+            Administrateur_Id,
+            TicketSpacer
+        } = require('../config.json');
         request({
             url: 'https://www.blagues-api.fr/api/random',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTczMDAyMjY2MTkyNjQyMDQ5IiwibGltaXQiOjEwMCwia2V5IjoiWXd0RUJPSE9VNEhjNGNsSEpQMHRHZGpyWGw2bDRvR2E1dEF2dHZGQnphY3pHY0hIM2giLCJjcmVhdGVkX2F0IjoiMjAyMC0wNy0wOFQyMDozNzoxOCswMjowMCIsImlhdCI6MTU5NDIzMzQzOH0.RubLWDozMILhvu2zKWXYclRRT5j5lZ1iOLIDw-Pk1wM'
+                'Authorization': 'Bearer ' +  token_blague + ''
             },
             json: true
         }, function (err, res, json) {
